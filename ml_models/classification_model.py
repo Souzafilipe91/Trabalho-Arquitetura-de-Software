@@ -6,8 +6,7 @@ def train_classification_model(data, target_column):
     with st.spinner("Treinando modelo de classificação..."):
         try:
             clf = setup(data, target=target_column,
-                        session_id=123, train_size=0.8,
-                        silent=True, verbose=False)
+                        session_id=123, train_size=0.8, verbose=False)
 
             best_models = compare_models(
                 include=["lr", "rf", "dt", "nb", "knn"],

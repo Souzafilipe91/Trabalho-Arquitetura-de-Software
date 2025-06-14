@@ -1,8 +1,8 @@
 import streamlit as st
-from ml_analytics_app_refactored.data_processing.data_loader import load_data, load_example_data
-from ml_analytics_app_refactored.data_processing.eda_functions import exploratory_analysis
-from ml_analytics_app_refactored.ml_models.ml_modeling_page import ml_modeling_page
-from ml_analytics_app_refactored.ml_models.prediction_functions import make_predictions
+from data_processing.data_loader import load_data, load_example_data
+from data_processing.eda_functions import exploratory_analysis
+from ml_models.ml_modeling_page import ml_modeling_page
+from ml_models.prediction_functions import make_predictions
 
 import warnings
 warnings.filterwarnings('ignore')

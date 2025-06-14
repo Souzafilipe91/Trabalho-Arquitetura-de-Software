@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from ml_analytics_app_refactored.ml_models.classification_model import train_classification_model
-from ml_analytics_app_refactored.ml_models.regression_model import train_regression_model
-from ml_analytics_app_refactored.ml_models.clustering_model import run_clustering_model
+from ml_models.classification_model import train_classification_model
+from ml_models.regression_model import train_regression_model
+from ml_models.clustering_model import run_clustering_model
 
 def ml_modeling_page(df):
     st.subheader("🤖 Modelagem de Machine Learning")

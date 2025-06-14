@@ -38,8 +38,11 @@ def exploratory_analysis(df):
         st.subheader("Distribuições das Variáveis Numéricas")
         
         fig, axes = plt.subplots(min(len(numeric_columns), 4), 1, figsize=(10, 3*min(len(numeric_columns), 4)))
-        if len(numeric_columns) == 1:
+        
+        if not isinstance(axes, np.ndarray):
             axes = [axes]
+        else:
+            axes = axes.flatten()
         
         for i, col in enumerate(numeric_columns[:4]):
             if i < len(axes):

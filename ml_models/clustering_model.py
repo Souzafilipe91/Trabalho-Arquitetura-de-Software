@@ -19,8 +19,7 @@ def run_clustering_model(df, feature_columns, n_clusters):
         
         with st.spinner("Executando clusterização..."):
             try:
-                clu = setup(numeric_data, session_id=123,
-                          silent=True, verbose=False)
+                clu = setup(numeric_data, session_id=123, verbose=False)
                 
                 kmeans = create_model("kmeans", num_clusters=n_clusters)
                 
